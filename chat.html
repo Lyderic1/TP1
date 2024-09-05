@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <header>
+        <h1>Chat en ligne</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="authentification.html">Chat</a></li>
+                <li>
+                    <a href="https://www.isen-ouest.fr" target="_blank">
+                        <img src="images/isen-logo.png" alt="Logo ISEN" style="height: 80px; width: auto;">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Chat en ligne</h2>
+        <form>
+            <label for="chat-area">Messages :</label><br>
+            <textarea id="chat-area" name="chat-area" cols="100" rows="10" readonly>
+Bienvenue dans le chat. Aucun nouveau message.
+            </textarea><br><br>
+            <label for="message">Votre message :</label>
+            <input type="text" id="message" name="message" required><br><br>
+            <button type="submit">Envoyer</button>
+            <button onclick="window.location.href='authentification.html';">Se déconnecter</button>
+        </form>
+    </section>
+</body>
+<footer>
+    <p>All content copyright &copy; A3- <a href="https://www.isen-ouest.fr" target="_blank">Lien vers la page du Programmeur</a></p>
+</footer>
+</html>
